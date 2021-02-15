@@ -1,0 +1,18 @@
+1. $ npx create-react-app my-app     //create react aplication
+2. $ yarn start       // start react aplication
+
+3. open src/App.js
+    chande class on 
+        import logo from './logo.svg';
+        import './App.css';
+
+        const App = () => {
+        return (
+            <div className = "App">
+            <h1>Symple js</h1>
+            </div>
+        );
+        }
+
+        export default App;
+
