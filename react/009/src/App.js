@@ -9,6 +9,8 @@ const App = () => {
       <Header/>
       <h1>Symple js</h1> 
       <p>hi broo</p>
+      
+      <p>hi broo</p>
       <Footer/>
     </div>
   );
