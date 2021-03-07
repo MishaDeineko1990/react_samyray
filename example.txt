@@ -32,3 +32,16 @@ cost Header = (props) => {
         </div>
     )
 }
+
+lasson 19 
+npm i react-router-dom -save
+
+
+import {BrowserRouter, Route} from "react-router-dom"
+
+    <BrowserRouter>
+        <div>
+          <Route path='/profile' component={Profile}/>
+          <Route path='/message' component={Message}/>
+        <div />
+    </BrowserRouter>
