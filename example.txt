@@ -19,3 +19,16 @@
 
 *********** emmet react https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c
 
+lasson 16 PROPS
+
+example 
+<Header name = "MIsha" age = "30"/>
+
+cost Header = (props) => {
+    return(
+        <div>
+            <span> {props.name} </span>
+             <span> {props.age} </span>
+        </div>
+    )
+}
