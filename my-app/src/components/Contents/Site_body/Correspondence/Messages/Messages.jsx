@@ -2,21 +2,20 @@
 // import s from './Correspondence.module.css';
 // import Dialogs from './Dialogs/Dialogs';
 // import Mes from './Mes/Mes';
+// import {NavLink} from "react-router-dom"
 
 import React from 'react';
-import s from './Nav_app.module.css';
+import s from './Messages.module.css';
 import {NavLink} from "react-router-dom"
 
-const Nav_app = () =>{
+const Messages = () =>{
 
     return (
         <div>
-            <NavLink to ="/message">Message</NavLink>
-            <br/>
-            <NavLink to ="/profile">Profile</NavLink>
+            Messages
         </div>
     )
 
 }
 
-export default Nav_app;
+export default Messages;

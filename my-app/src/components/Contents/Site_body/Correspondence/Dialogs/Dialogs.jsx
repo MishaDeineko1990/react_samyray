@@ -2,21 +2,22 @@
 // import s from './Correspondence.module.css';
 // import Dialogs from './Dialogs/Dialogs';
 // import Mes from './Mes/Mes';
+// import {NavLink} from "react-router-dom"
 
 import React from 'react';
-import s from './Nav_app.module.css';
+import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom"
 
-const Nav_app = () =>{
+const Dialogs = () =>{
 
     return (
         <div>
-            <NavLink to ="/message">Message</NavLink>
+            <NavLink to ="/Messange/0">Dima</NavLink>
             <br/>
-            <NavLink to ="/profile">Profile</NavLink>
+            <NavLink to ="/Messange/1">Kolia</NavLink>
         </div>
     )
 
 }
 
-export default Nav_app;
+export default Dialogs;
