@@ -6,7 +6,7 @@
 import React from 'react';
 import s from './Contents.module.css';
 import Site_body from './Site_body/Site_body';
-import Site_body from './Nav_app/Nav_app';
+import Nav_app from './Nav_app/Nav_app';
 
 const Contents = () =>{
 
