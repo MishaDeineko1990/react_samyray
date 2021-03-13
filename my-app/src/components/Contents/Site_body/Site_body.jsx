@@ -11,7 +11,8 @@ import Correspondence from './Correspondence/Correspondence';
 import Profile from './Profile/Profile'
 
 
-const Site_body = () =>{
+const Site_body = (props) =>{
+  console.log(props);
 
     return (
         <div>

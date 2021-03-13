@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Contents from './components/Contents/Contents';
-import {BrowserRouter, Route} from "react-router-dom"
+import {BrowserRouter, Route} from "react-router-dom";
+import state from "./redux/state";
 
 // import React from 'react';
 // import s from './Correspondence.module.css';
@@ -15,7 +16,7 @@ function App() {
     <BrowserRouter>  
       <div>
         <Header />
-        <Contents />
+        <Contents state={state}/>
         {/* <Content />
         <Footer /> */}
       </div>

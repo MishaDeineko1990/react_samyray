@@ -8,13 +8,13 @@ import s from './Contents.module.css';
 import Site_body from './Site_body/Site_body';
 import Nav_app from './Nav_app/Nav_app';
 
-const Contents = () =>{
+const Contents = (props) =>{
 
     return (
         <div>
             <div>
                 <Nav_app />
-                <Site_body />
+                <Site_body state={props.state}/>
             </div>
         </div>
     )
