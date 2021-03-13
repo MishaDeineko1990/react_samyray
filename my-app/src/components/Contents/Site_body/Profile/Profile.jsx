@@ -10,8 +10,8 @@ import {NavLink} from "react-router-dom";
 
 
 
-const Profile = () =>{
-
+const Profile = (props) =>{
+    // console.log(props.state)
     return (
         <div>
             Bla Bla

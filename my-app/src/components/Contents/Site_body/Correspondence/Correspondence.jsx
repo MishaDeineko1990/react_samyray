@@ -11,10 +11,11 @@ import Dialogs from './Dialogs/Dialogs';
 import Messages from './Messages/Messages'
 
 
-const Correspondence = () =>{
-
+const Correspondence = (props) =>{
+    console.log(props)
     return (
         <div>
+
             <Dialogs/>  
             <Messages/>       
         </div>
