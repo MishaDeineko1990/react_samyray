@@ -59,3 +59,14 @@ import {BrowserRouter, Route} from "react-router-dom"
           <Route path='/message' component={Message}/>
         <div />
     </BrowserRouter>
+
+
+change props acros map
+    let dialogsElements = props.state.dialogs.map( d => <DialogItem name={d.name} id={d.id} />  );
+    let messagesElements = props.state.messages.map( m => <Message message={m.message}/> );
+
+
+
+
+https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8 - cource
+https://github.com/it-kamasutra/react-way-of-samurai  git repositorie

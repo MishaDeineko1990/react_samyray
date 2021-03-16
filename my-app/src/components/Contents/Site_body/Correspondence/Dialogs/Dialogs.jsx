@@ -8,7 +8,11 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom"
 
-const Dialogs = () =>{
+const Dialogs = (props) =>{
+
+    console.log("props open")
+    console.log(props);
+    console.log("close close")
 
     return (
         <div>
