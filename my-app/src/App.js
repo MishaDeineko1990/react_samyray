@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Contents from './components/Contents/Contents';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, NavLink} from "react-router-dom";
 import state from "./redux/state";
 
 // import React from 'react';
@@ -17,8 +17,7 @@ function App() {
       <div>
         <Header />
         <Contents state={state}/>
-        {/* <Content />
-        <Footer /> */}
+        {/* <Route path='/profile' render={ () => <Profile state={props.state.profilePage} /> }/> */}
       </div>
     </BrowserRouter>
   );
