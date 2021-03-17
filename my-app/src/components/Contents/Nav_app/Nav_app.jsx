@@ -11,7 +11,7 @@ const Nav_app = () =>{
 
     return (
         <div>
-            <NavLink to ="/message">Message</NavLink>
+            <NavLink to ="/dialogs">Message</NavLink>
             <br/>
             <NavLink to ="/profile">Profile</NavLink>
         </div>

@@ -8,16 +8,19 @@ import React from 'react';
 import s from './Correspondence.module.css';
 import {NavLink} from "react-router-dom";
 import Dialogs from './Dialogs/Dialogs';
-import Messages from './Messages/Messages'
+
 
 
 const Correspondence = (props) =>{
-    console.log(props)
+    // console.log("start Correspondence start");
+    // console.log(props);
+    // console.log("end Correspondence start");
+
     return (
         <div>
 
-            <Dialogs state={props}/>  
-            <Messages/>       
+            <Dialogs state={props.state}/>  
+                  
         </div>
     )
 

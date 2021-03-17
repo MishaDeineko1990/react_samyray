@@ -13,11 +13,15 @@ import Profile from './Profile/Profile'
 
 const Site_body = (props) =>{
   
+    // console.log("start 22222 start");
+    // console.log(props);
+    // console.log("end C22222 start");
+
 
     return (
         <div>
           <Route path='/profile' render={ () => <Profile state={props.state.profilePage} /> }/>
-          <Route path='/message' render={ () => <Correspondence state={props.state.dialogsPage} /> }/>
+          <Route path='/dialogs' render={ () => <Correspondence state={props.state.dialogsPage} /> }/>
         </div>
     )
 
