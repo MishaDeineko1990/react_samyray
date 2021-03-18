@@ -6,13 +6,19 @@
 
 import React from 'react';
 import s from './Messages.module.css';
-import {NavLink} from "react-router-dom"
+import {Route} from "react-router-dom";
+import Messages_item from './Messages_item/Messages_item';
 
-const Messages = () =>{
+
+
+
+const Messages = (props) =>{
+
+   
 
     return (
         <div>
-            Messages
+            <Route path={'/dialogs/'+props.id} render={ (props) => <Messages_item state={props.message} /> }/>
         </div>
     )
 
