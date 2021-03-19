@@ -14,11 +14,12 @@ import Messages_item from './Messages_item/Messages_item';
 
 const Messages = (props) =>{
 
-   
+    // console.log("frrrrrrrrrrrrrrrrrrrrrr")
+    // console.log(props);
 
     return (
         <div>
-            <Route path={'/dialogs/'+props.id} render={ (props) => <Messages_item state={props.message} /> }/>
+            <Route path={'/dialogs/'+props.id} render={ () => <Messages_item state={props} /> }/>
         </div>
     )
 

@@ -30,7 +30,7 @@ let state = {
             },
             {id: 3, name: 'Sveta',
             messages: [
-                {id: 1, message: 'Hi222'},
+                {id: 1, message: 'whay'},
                 {id: 0, message: 'How is your it-kamasutra?2222'},
                 {id: 1, message: 'Yo2222'},
                 {id: 1, message: 'Hi'},
@@ -46,7 +46,7 @@ let state = {
             },
             {id: 4, name: 'Sasha',
             messages: [
-                {id: 1, message: 'Hi222'},
+                {id: 1, message: 'lo'},
                 {id: 0, message: 'How is your it-kamasutra?2222'},
                 {id: 1, message: 'Yo2222'},
                 {id: 1, message: 'Hi'},
@@ -74,7 +74,7 @@ let state = {
             },
             {id: 5, name: 'Viktor',
             messages: [
-                {id: 1, message: 'Hi222'},
+                {id: 1, message: 'nit'},
                 {id: 0, message: 'How is your it-kamasutra?2222'},
                 {id: 1, message: 'Yo2222'},
                 {id: 1, message: 'Hi'},
@@ -126,7 +126,7 @@ let state = {
             },
             {id: 6, name: 'Valera',
             messages: [
-                {id: 1, message: 'Hi222'},
+                {id: 1, message: 'dat'},
                 {id: 0, message: 'How is your it-kamasutra?2222'},
                 {id: 1, message: 'Yo2222'},
                 {id: 1, message: 'Hi'},
