@@ -18,9 +18,7 @@ const Correspondence = (props) =>{
 
     return (
         <div>
-
-            <Dialogs state={props.state}/>  
-                  
+            <Dialogs state={props.state}/>
         </div>
     )
 

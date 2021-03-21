@@ -12,7 +12,7 @@ const Contents = (props) =>{
 
     return (
         <div>
-            <div>
+            <div className={s.contents_wrap}>
                 <Nav_app />
                 <Site_body state={props.state}/>
             </div>

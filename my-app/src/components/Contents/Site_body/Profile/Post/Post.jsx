@@ -5,23 +5,20 @@
 // import {NavLink} from "react-router-dom"
 
 import React from 'react';
-import s from './Profile.module.css';
+import s from './Post.module.css'
 import {NavLink} from "react-router-dom";
-import Post from './Post/Post';
-import Info_banner from "./Info_banner/Info_banner";
 
 
 
-
-const Profile = (props) =>{
-    // console.log(props.state)
+const Post = (props) =>{
+    
+    let posts = props.state.posts.map( d => <div>{d.message}</div> )
     return (
-        <div>
-            <Info_banner state={props.state}/>
-            <Post state={props.state}/>
+        <div >
+            {posts}
         </div>
     )
 
 }
 
-export default Profile;
+export default Post;

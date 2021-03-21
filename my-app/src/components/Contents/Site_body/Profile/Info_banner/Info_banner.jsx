@@ -5,23 +5,19 @@
 // import {NavLink} from "react-router-dom"
 
 import React from 'react';
-import s from './Profile.module.css';
+// import s from './Info_banner.module.css'
 import {NavLink} from "react-router-dom";
-import Post from './Post/Post';
-import Info_banner from "./Info_banner/Info_banner";
 
 
 
-
-const Profile = (props) =>{
-    // console.log(props.state)
+const Info_banner = (props) =>{
+    
     return (
-        <div>
-            <Info_banner state={props.state}/>
-            <Post state={props.state}/>
+        <div >
+            <img src="https://c402277.ssl.cf1.rackcdn.com/photos/2325/images/hero_full/mountains-hero.jpg?1345838509" alt=""/>
         </div>
     )
 
 }
 
-export default Profile;
+export default Info_banner;
