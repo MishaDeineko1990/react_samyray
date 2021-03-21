@@ -12,10 +12,22 @@ import {NavLink} from "react-router-dom";
 
 const Post = (props) =>{
     
-    let posts = props.state.posts.map( d => <div>{d.message}</div> )
+    let posts = props.state.posts.map( d => 
+        <div className={s.wrap}>
+            <div>
+                {d.message}
+            </div>
+            <div>
+                Like; {d.likesCount}
+            </div>        
+        </div> )
+
     return (
         <div >
+            
             {posts}
+            
+
         </div>
     )
 

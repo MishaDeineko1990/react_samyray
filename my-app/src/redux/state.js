@@ -228,6 +228,25 @@ let state = {
 
     },
     sidebar: {}
+
+
 }
 
-export default state; 
+export let add_post = (post_message) => {
+    let new_post = {
+        id: state.profilePage.posts.length + 1, 
+        message: post_message,
+        likesCount: 0
+    }    
+    state.profilePage.posts.push(new_post)
+}
+
+// add_post('hi bro miha');
+
+for (let index = 0; index < 1000; index++) {
+    
+    add_post('hi bro miha ');
+    
+}
+
+export default state
