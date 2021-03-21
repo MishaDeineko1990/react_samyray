@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
     profilePage: {
         posts: [
@@ -239,14 +241,11 @@ export let add_post = (post_message) => {
         likesCount: 0
     }    
     state.profilePage.posts.push(new_post)
+    rerenderEntireTree(state);
 }
 
 // add_post('hi bro miha');
 
-for (let index = 0; index < 1000; index++) {
-    
-    add_post('hi bro miha ');
-    
-}
+
 
 export default state

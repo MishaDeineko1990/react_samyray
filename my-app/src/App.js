@@ -12,11 +12,13 @@ import {BrowserRouter, Route, NavLink} from "react-router-dom";
 // import Mes from './Mes/Mes';
 
 function App(props) {
+
+
   return (
     <BrowserRouter>  
       <div>
         <Header />
-        <Contents state={props.state}/>
+        <Contents state={props.state} add_post={props.add_post}/>
         {/* <Route path='/profile' render={ () => <Profile state={props.state.profilePage} /> }/> */}
       </div>
     </BrowserRouter>

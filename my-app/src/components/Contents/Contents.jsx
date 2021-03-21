@@ -10,11 +10,12 @@ import Nav_app from './Nav_app/Nav_app';
 
 const Contents = (props) =>{
 
+
     return (
         <div>
             <div className={s.contents_wrap}>
                 <Nav_app />
-                <Site_body state={props.state}/>
+                <Site_body state={props.state}  add_post={props.add_post}/>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ import {NavLink} from "react-router-dom";
 
 
 const Post = (props) =>{
-    
+
     let posts = props.state.posts.map( d => 
         <div className={s.wrap}>
             <div>
@@ -22,8 +22,31 @@ const Post = (props) =>{
             </div>        
         </div> )
 
+    let newPostElement = React.createRef();
+
+    let add_post = () => {
+        let text = newPostElement.current.value;
+        props.add_post(text);
+        newPostElement.current.value = '';
+
+          
+  console.log("6ppppp")
+  console.log(props)
+    }
+
+
+
     return (
         <div >
+
+            <div>
+                <div>
+                    <textarea ref={newPostElement}></textarea>
+                </div>
+                <div>
+                    <button onClick={ add_post }>Add post</button>
+                </div>
+            </div>
             
             {posts}
             

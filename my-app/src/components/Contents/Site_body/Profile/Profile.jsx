@@ -14,11 +14,13 @@ import Info_banner from "./Info_banner/Info_banner";
 
 
 const Profile = (props) =>{
-    // console.log(props.state)
+
+    
+
     return (
         <div>
-            <Info_banner state={props.state}/>
-            <Post state={props.state}/>
+            <Info_banner/>
+            <Post state={props.state} add_post={props.add_post}/>
         </div>
     )
 

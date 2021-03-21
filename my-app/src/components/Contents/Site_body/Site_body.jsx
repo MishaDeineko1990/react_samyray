@@ -12,15 +12,10 @@ import Profile from './Profile/Profile'
 
 
 const Site_body = (props) =>{
-  
-    // console.log("start 22222 start");
-    // console.log(props);
-    // console.log("end C22222 start");
-
 
     return (
         <div>
-          <Route path='/profile' render={ () => <Profile state={props.state.profilePage} /> }/>
+          <Route path='/profile' render={ () => <Profile state={props.state.profilePage } add_post={props.add_post} /> }/>
           <Route path='/dialogs' render={ () => <Correspondence state={props.state.dialogsPage} /> }/>
         </div>
     )
