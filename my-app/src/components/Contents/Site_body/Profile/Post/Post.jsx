@@ -25,13 +25,13 @@ const Post = (props) =>{
     let newPostElement = React.createRef();
 
     let add_post = () => {
+        debugger;
         let text = newPostElement.current.value;
         props.add_post(text);
         newPostElement.current.value = '';
 
           
-  console.log("6ppppp")
-  console.log(props)
+ 
     }
 
 
