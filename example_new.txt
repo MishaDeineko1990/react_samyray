@@ -182,7 +182,8 @@ const Post = (props) =>{
             </div>          
             {posts}  
 
-        </div>
+        </div>  
+        
     )
 }
 export default Post;
