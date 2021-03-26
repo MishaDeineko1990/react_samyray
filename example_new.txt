@@ -162,7 +162,7 @@ const Post = (props) =>{
             </div>        
         </div> )
         
-    let newPostElement = React.createRef();
+    let newPostElement = React.createRef();  //create refference
     let add_post = () => {
         debugger;
         let text = newPostElement.current.value;
@@ -174,7 +174,7 @@ const Post = (props) =>{
         <div>
             <div>
                 <div>
-                    <textarea ref={newPostElement}></textarea>
+                    <textarea ref={newPostElement}></textarea>        //confirmation refference reactS
                 </div>
                 <div>
                     <button onClick={ add_post }>Add post</button>

@@ -41,7 +41,7 @@ const Post = (props) =>{
 
             <div>
                 <div>
-                    <textarea ref={newPostElement}></textarea>
+                    <textarea ref={newPostElement}/>
                 </div>
                 <div>
                     <button onClick={ add_post }>Add post</button>
