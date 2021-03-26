@@ -46,6 +46,8 @@ cost Header = (props) => {
     )
 }
 
+-----------------------------------------------------------------
+
 lasson 19 
 npm i react-router-dom -save
 
@@ -105,7 +107,7 @@ export let add_post = (post_message) => {
 
 
 
-
+--------------------------------------------------
 
 SEND FUCTION IN INDEX.JS ACROS PROPS
 
@@ -114,12 +116,10 @@ import state from "./redux/state";
 
 rerenderEntireTree(state);
 
+-----------------------------------------------------------
 
 
-
-
-
-REVDER.JS
+RENDER.JS
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -137,8 +137,55 @@ export let rerenderEntireTree = (state) => {
       );
 }
 
+---------------------------------------------------------------------------------------------------
+
+crete and send textarea 
 
 
+
+
+import React from 'react';
+import s from './Post.module.css'
+import {NavLink} from "react-router-dom";
+
+
+
+const Post = (props) =>{
+
+    let posts = props.state.posts.map( d => 
+        <div className={s.wrap}>
+            <div>
+                {d.message}
+            </div>
+            <div>
+                Like; {d.likesCount}
+            </div>        
+        </div> )
+        
+    let newPostElement = React.createRef();
+    let add_post = () => {
+        debugger;
+        let text = newPostElement.current.value;
+        props.add_post(text);
+        newPostElement.current.value = ''; 
+    }
+
+    return (
+        <div>
+            <div>
+                <div>
+                    <textarea ref={newPostElement}></textarea>
+                </div>
+                <div>
+                    <button onClick={ add_post }>Add post</button>
+                </div>
+            </div>          
+            {posts}  
+
+        </div>
+    )
+}
+export default Post;
 
 ---------------------------------------------------------------------------------------------------
 
