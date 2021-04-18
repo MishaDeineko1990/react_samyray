@@ -239,7 +239,7 @@ export let add_post = (post_message) => {
     let new_post = {
         id: state.profilePage.posts.length + 1, 
         message: post_message,
-        likesCount: 0
+        likesCount: 115
     }    
     state.profilePage.posts.push(new_post)
     rerenderEntireTree(state);
